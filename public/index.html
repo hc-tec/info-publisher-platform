@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name='viewport' content='width=device-width,initial-scale=1,user-scale=no' />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <style>
+    *:not(i) {
+      margin: 0;
+      padding: 0;
+      font-family: Constantia, 华文中宋, 宋体, serif !important;
+      -webkit-tap-highlight-color:transparent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    button {
+      outline: 0;
+    }
+    ::selection { 
+      background: #97dffd; 
+      color: #fff; 
+    } 
+    ::-moz-selection { 
+      background: #97dffd; 
+      color: #fff; 
+    } 
+    ::-webkit-selection { 
+      background: #97dffd; 
+      color: #fff; 
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #ececec;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track-piece {
+      background: 0 0;
+    }
+  </style>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
